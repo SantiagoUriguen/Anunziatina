@@ -1,0 +1,412 @@
+h2 {
+    font-size: 50px;
+    color: brown;
+    font-family: "Dancing Script"
+}
+
+hr {
+    margin-left: 500px;
+}
+
+p {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    color: brown;
+}
+
+.page-content {
+    background-color: white;
+}
+
+.spacer-generico{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.info {
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    color: black;
+    bottom: 0;
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Dancing Script';
+        margin-bottom: 40px;
+    }
+}
+
+.info-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: url(./../img/Imagen\ prueba.jpg);
+    background-size: cover;
+    margin-top: -110px;
+    z-index: -1;
+    height: 500px;
+    overflow-y: hidden;
+}
+
+.home-bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+    background-color: white;
+    color: brown;
+
+    h2 {
+        text-align: center;
+        padding: 50px;
+        letter-spacing: 0.1rem;
+        font-size: 50px;
+        font-family: 'Fredoka',cursive;
+        margin: 0 auto;
+        animation: text 2s linear infinite;
+        background: linear-gradient(brown,black);
+        background-clip: text;
+    }
+
+    .subti {
+        text-align: center;
+        padding: 50px;
+        margin-top: 10px;
+        font-family: 'Times New Roman';
+    }
+}
+
+@keyframes text{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+
+
+.wrap {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.seccion-recetas {
+    position: relative;
+    background-size: 100% auto;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .imagen-recetas {
+        width: 100%;
+    }
+
+    .link-recetas {
+        font-family: 'Dancing Script';
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 6rem;
+        }
+
+        & :hover {
+            color: red;
+        }
+    }
+}
+
+/* Nosotros */ 
+
+.sobre-nosotros-container {
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: url(./../img/sobrenosotros.jpg);
+    background-size: cover;
+    margin-top: -110px;
+    z-index: -1;
+    position: relative;
+    height: 500px;
+    overflow-y: hidden;
+}
+
+.sobre-nosotros {
+    position: absolute;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    bottom: 0;
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Dancing Script';
+        margin-bottom: 40px;
+        color: white;
+    }
+}
+
+.Historia0 {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;    
+
+    h2 {
+        font-weight: bold;
+        background-color: white;
+        text-align: center;
+        padding: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+        color: brown;
+        animation: text 2s linear infinite;
+
+        @keyframes text {
+            0%{
+    
+                transform: translateY(0);
+              }
+              100%{
+                
+                transform: translateY(40px);
+            
+            }
+
+
+        }
+    }
+}
+
+.videonosotros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+    
+.historia1 {
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    
+.historia2 {
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Menu */
+
+.titleespecialidades {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+}
+  
+.especialitit {
+    font-family: 'Dancing Script';
+    position: relative;
+    color: brown;
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+.container-fotos {
+    padding: 3rem;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+    
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.6)
+}
+    
+.caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    position: absolute;
+}
+    
+.img-container {
+    position: relative;
+}
+    
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Contenido Locales */
+.titleencontrarnos {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.titleencontrarnos h2 {
+    color: brown;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    margin-top: 8%;
+}
+
+.container-locales {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+div.boxModel,
+div.boxModel2 {
+    width: 450px;
+    background-color: bisque;
+    border: 5px solid brown;
+    text-align: center;
+    margin: 20px;
+}
+
+div.boxModel {
+    left: 0;
+}
+
+div.boxModel2 {
+    right: 0;
+}
+
+
+/* Contenido Contacto */
+div.titlecontactenos {
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-register {
+    max-width: 500px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-bottom: 100px;
+    box-shadow: 7px 13px 37px #000;
+
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        & :hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    .botons {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+        
+.controls {
+    width: 100%;
+    background: bisque;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+p.acuerdo {
+    color: white;
+}
+        
+a.Terminos {
+    color: blue;
+    text-decoration: underline;
+}
+a.cuenta {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        margin-top: 0;
+    }
+    .info h1 {
+        font-size: 36px;
+    }
+    .sobre-nosotros-container {
+        margin-top: 0;
+    }
+    .sobre-nosotros {
+        left: 30%;
+    }
+    .sobre-nosotros h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .spacer-generico {
+        height: 300px;
+    }
+}
+
+    
+    

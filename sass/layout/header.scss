@@ -1,0 +1,102 @@
+@import '../shared/variables';
+
+.menu-toggle {
+    font-size: 32px;
+    display: none !important;
+}
+
+.label-toggle {
+    display: none,
+}
+
+header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 5px 50px;
+    background-color: $header-bg-color;
+
+    img {
+        height: 100px;
+    }
+
+    nav img {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 35px;
+    }
+
+    ul li a {
+        color: $link-color;
+    }
+
+    ul li a:hover {
+        color: $hover-link-color;
+        text-decoration: none;
+    }
+
+    ul li a.active {
+        color: $active-link-color;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .label-toggle {
+        display: block;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #menu-button:checked~ul {
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        width: 50px;
+        height: auto;
+    }
+
+    header {
+        position: fixed;
+        z-index: 2;
+        width: 100vw;
+        padding: 5px 50px;
+        color: $link-color;
+
+        img {
+            height: 70px;
+            width: auto;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            display: block;
+            position: fixed;
+            margin-top: 40px;
+            width: 100%;
+            background-color: $header-bg-color;
+            left: 100%;
+            right: 0;
+
+            li {
+                padding: 10px;
+                margin-left: 50px;
+            }
+        }
+
+        .link-recetas h1 {
+            font-size: 3rem;
+        }
+    }
+}
